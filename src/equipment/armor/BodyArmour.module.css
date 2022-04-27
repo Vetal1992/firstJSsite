@@ -1,0 +1,80 @@
+.main {
+    position: absolute;
+    left: 38vw;
+    top: 25vw;
+    width: 18vw;
+    height: 5vw;
+    cursor: pointer;
+}
+
+.main:hover {
+    border: .4vw solid rgba(245, 240, 103, 0.504);
+}
+
+.bodyArmourPrev {
+    display: none;
+    position: absolute;
+    left: 57vw;
+    top: 25vw;
+    width: 30vw;
+    height: 15vw;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.149), rgb(0, 0, 0));
+    border-radius: 0 5vw 5vw 0;
+    pointer-events: none;
+    animation: bodyArmourAnim 1s;
+}
+
+@keyframes bodyArmourAnim {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30vw;
+    }
+}
+
+.bodyArmourMain {
+    position: absolute;
+    left: 2vw;
+    top: 2vw;
+    width: 26vw;
+    height: 11vw;
+    color: rgb(255, 255, 255);
+}
+
+.bodyArmourMain p {
+    display: block;
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+.linkingBlock {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(127, 255, 212, 0.322);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        left: 32vw;
+        top: 35vw;
+        width: calc(18vw * 1.5);
+        height: calc(5vw * 1.6);
+    }
+    .bodyArmourPrev {
+        left: 59.6vw;
+        top: 35vw;
+        width: 35vw;
+        height: 45vw;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.149), rgb(0, 0, 0));
+        border-radius: 0 5vw 5vw 0;
+    }
+    .bodyArmourMain p{
+        top: 3vw;
+        width: 32vw;
+        font-size: 2.5vw;
+    }
+}

@@ -1,0 +1,141 @@
+.russianWarship{
+    position: absolute;
+    left: -10vw;
+    top: 20vw;
+    background-image: url(../../media/russianWarship/russianWarship.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 17vw;
+    height: 12vw;
+    z-index: 10;
+}
+.russianWarship:hover{
+    position: absolute;
+    left: 83vw;
+    left: 0vw;
+    animation: russianWarship 12s forwards;
+    cursor: crosshair;
+}
+@keyframes russianWarship{
+    0%{
+        left: -10vw;
+    }
+    50%{
+
+    }
+    100%{
+        left: 83vw;
+    }
+}
+.penis{
+    display: none;
+    position: absolute;
+    left: 88vw;
+    top: 20vw;
+    background-image: url(../../media/russianWarship/penis.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 17vw;
+    height: 12vw;
+    animation: penis 12s forwards;
+    z-index: 10;
+    pointer-events: none;
+}
+@keyframes penis{
+    0%{
+        left: 100vw;
+        transform: rotate(0deg);
+    }
+    50%{
+    }
+    100%{
+        left: 88vw;
+        transform: rotate(45deg);
+    }
+}
+.storms{
+    display: none;
+    position: absolute;
+    left: 0vw;
+    top: 28vw;
+    background-image: url(../../media/russianWarship/storm.png);
+    background-repeat:repeat;
+    background-position: center;
+    background-size: contain;
+    animation-name: storms;
+    animation-duration: 5s;
+    animation-iteration-count:infinite;
+    width: 100vw;
+    height: 3vw;
+    z-index: 3;
+}
+@keyframes storms{
+    0%{
+        opacity: .0;
+        left: -1vw;
+    }
+    50%{
+        opacity: 1;
+        left: 1vw;
+    }
+    100%{
+        opacity: 1;
+        left: -1vw;
+    }
+}
+.warshipPhone{
+    display: none;
+    position: absolute;
+    left: 0vw;
+    top: 23vw;
+    background-color: rgba(172, 255, 226, 0.521);
+    width: 100vw;
+    height: 8vw;
+    z-index: 2;
+}
+.warshipPhone a{
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    font-weight: 700;
+    color: rgb(1, 29, 53);
+    background-color: aliceblue;
+    animation: phone 4s;
+}
+@keyframes phone{
+    0%{
+        opacity: .0;
+    }
+    50%{
+        
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.congradulation{
+    display: none;
+    position: absolute;
+    left: 0vw;
+    top: 19vw;
+    background-image: url(../../media/russianWarship/ukraine.png);
+    background-repeat:repeat;
+    background-position: center;
+    background-size: contain;
+    width: 100vw;
+    z-index: 3;
+}
+.congradulation p{
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+@media screen and (max-width: 700px) {
+    .russianWarship{
+        display: none
+    }
+}

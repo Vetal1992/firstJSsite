@@ -1,0 +1,66 @@
+.wentelation{
+    position: absolute;
+    left: 17.3vw;
+    top: 22.6vw;
+    width: 7vw;
+    height: 21.6vw;
+    background-image: url(../../../media/bunker/bunkerPage/wentelation.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: .8;
+}
+.wentelation:hover{
+    border: 2px solid white;
+    z-index: 2;
+}
+.description{
+    position: absolute;
+    top: 22.6vw;
+    left: 25.3vw;
+    width: 30%;
+    height: auto;
+    padding: 1vw;
+    background-color: rgb(125, 129, 118);
+    display: none;
+    animation-name: bounce;
+    animation-duration: 1s;
+    pointer-events: none;
+    z-index: 2;
+}
+@keyframes bounce {
+    0%{
+        left: 17.3vw;
+        opacity: 0;
+    }
+    50%{
+
+    }
+    100%{
+        left: 25.3vw;
+        opacity: 1;
+    }
+  }
+
+  .relink{
+      display: none;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(127, 255, 212, 0.325);
+      cursor: pointer;
+  }
+  @media screen and (max-width: 600px) {
+    .wentelation{
+        position: absolute;
+        top: 33.4vw;
+        left: 16vw;
+        width: 8vw;
+        height: 26vw;
+    }
+    .wentelationText p{
+        font-size: 2.5vw;
+    }
+    .wentelationText h1{
+        font-size: 3.5vw;
+    }
+}

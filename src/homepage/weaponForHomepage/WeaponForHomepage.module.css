@@ -1,0 +1,49 @@
+.blocks{
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../media/weapon/weaponForMain.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+.blocks h1{
+    font-size: 3vw;
+}
+.blocks:active{
+    background: #ffe9e9;
+}
+.armour{
+    position: absolute;
+    top: -5%;
+    left: 35%;
+    width: 30%;
+    height: 40%;
+    background-color: yellowgreen;
+    display: none;
+    animation-name: bounce;
+    animation-duration: 1s;
+    pointer-events: none;
+}
+@keyframes bounce {
+    0%{
+        top:20%;
+        opacity: 0;
+    }
+    50%{
+
+    }
+    100%{
+        top: -5%;
+        opacity: 1;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .blocks{
+        width: 70vw;
+        height: 40vw;
+    }
+}

@@ -1,0 +1,128 @@
+.bunkerMainBlock{
+    position: relative;
+    width: 90vw;
+    height: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0%;
+    background-image: url(../media/bunker/bunkerPage/mainImage.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.bunkerMain{
+    position: relative;
+    width: 70vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 10vw;
+}
+.bunkerMain a{
+    margin-top: 5vw;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgba(136, 136, 136, 0.582);
+    font-size: 2vw;
+    font-weight: 700;
+    color: rgb(37, 34, 34);
+    border: 4px solid white;
+}
+.bunkerMain a:hover{
+    background-color: aqua;
+}
+.back{
+    position: fixed;
+    left: 0;
+    top: 15vw;
+    background: none;
+    border: none;
+}
+.triangleLeft {
+    position: relative;
+    width: 0;
+    height: 0;
+    border-top: 4vw solid transparent;
+    border-bottom: 4vw solid transparent;
+    border-right: 5vw solid #9681a9;
+}
+.triangleLeft:hover{
+    border-right: 5vw solid #7b46a9;
+    cursor: pointer;
+}
+.next{
+    position: fixed;
+    right: 0;
+    top: 15vw;
+    background: none;
+    border: none;
+}
+.triangleRight {
+    position: relative;
+    width: 0;
+      height: 0;
+      border-top: 4vw solid transparent;
+      border-bottom: 4vw solid transparent;
+      border-left: 5vw solid #9681a9;
+}
+.triangleRight:hover{
+    border-left: 5vw solid #7b46a9;
+    cursor: pointer;
+}
+
+.bunkerNavHead{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    background-color: #9681a9;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -2vw;
+    animation: navHead 1.5s;
+}
+.bunkerNavHead div{
+    width: 33%;
+    height: 5vw;
+}
+@keyframes navHead{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.bunkerNavHead a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 5vw;
+    font-size: 2vw !important;
+    font-weight: 500;
+    color: black;
+    text-align: center;
+}
+.bunkerNavHead a:hover{
+    background-color: aqua;
+}
+@media screen and (max-width: 600px) {
+    .bunkerMainBlock{
+        position: absolute;
+        width: 100vw;
+        height: 85vw;
+        margin: 0;
+        padding: 0;
+    }
+    .bunkerNavHead{
+        width: 80vw;
+    }
+    .back{
+        top: 60vw;
+    }
+    .next{
+        top: 60vw;
+    }
+}

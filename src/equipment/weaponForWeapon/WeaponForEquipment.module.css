@@ -1,0 +1,148 @@
+.main{
+    position: absolute;
+    left: 39.2%;
+    top: 9.55%;
+    background-image: url(../../media/equipment/weapon.png);
+    width: 40vw;
+    height: 17vw;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+    z-index: 2;
+}
+.shooting{
+    display: none;
+    position: absolute;
+    top: 13.8vw;
+    width: 5vw;
+    height: 2vw;
+    background-image: url(../../media/equipment/fire.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    animation: fire .3s infinite;
+    pointer-events: none;
+}
+@keyframes fire{
+    0%{
+        left: 75.7vw;
+    }
+    100%{
+        left: 100.7vw;
+    }
+}
+.gilz{
+    display: none;
+    position: absolute;
+    top: 13.8vw;
+    width: 5vw;
+    height: 2vw;
+    background-image: url(../../media/equipment/fire.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    animation: gilz .3s infinite;
+    pointer-events: none;
+    opacity: .7;
+    z-index: 4;
+}
+@keyframes gilz{
+    0%{
+        top: 13.8vw;
+        left: 55.7vw;
+    }
+    15%{
+        top: 12vw;
+        left: 51vw;
+    }
+    20%{
+        top: 13vw;
+        left: 48vw;
+    }
+    100%{
+        top: 73vw;
+        left: 25.7vw;
+    }
+}
+.shootFire{
+    display: none;
+    position: absolute;
+    top: 11vw;
+    left: 76.7vw;
+    width: 7vw;
+    height: 7vw;
+    background-image: url(../../media/equipment/shootFire.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    animation: shootFire .1s infinite;
+    pointer-events: none;
+}
+@keyframes shootFire{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 7vw;
+    }
+}
+.reloadWindow{
+    display: none;
+    position: absolute;
+    top: 13.8vw;    
+    left: 53.7vw;
+    width: 5vw;
+    height: 1vw;
+    background-color: black;
+    animation: reloadW .1s infinite;
+    border-radius: 1vw 1vw 0 0;
+    pointer-events: none;
+    z-index: 3;
+}
+@keyframes reloadW{
+    0%{
+        height: 1vw;
+    }
+    100%{
+        height: .1vw;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .main{
+        left: 34%;
+        top: 7.55%;
+        width: calc(40% * 1.5);
+        height: calc(17% * 1.5);
+    }
+    @keyframes gilz{
+        0%{
+            top: 20vw;
+            left: 55.7vw;
+        }
+        15%{
+            top: 18vw;
+            left: 53vw;
+        }
+        20%{
+            top: 19vw;
+            left: 51vw;
+        }
+        100%{
+            top: 73vw;
+            left: 25.7vw;
+        }
+    }
+    .shootFire{
+        top: 18.2vw;
+        left: 90.7vw;
+    }
+    .shooting{
+        top: 20.8vw;
+    }
+    .reloadWindow{
+        top: 20.8vw;    
+        left: 56.7vw;
+    }
+}

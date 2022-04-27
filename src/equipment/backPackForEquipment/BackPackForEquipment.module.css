@@ -1,0 +1,104 @@
+.main {
+    position: absolute;
+    left: 22vw;
+    top: 11.2vw;
+    background-image: url(../../media/equipment/backPack.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 15vw;
+    height: 28vw;
+    cursor: pointer;
+}
+
+.main:hover {
+    border: .4vw solid rgba(245, 240, 103, 0.504);
+}
+
+.backPackPrev {
+    display: none;
+    position: absolute;
+    left: 5vw;
+    top: 10vw;
+    width: 30vw;
+    height: 30vw;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.832), rgba(0, 0, 0, 0));
+    border-radius: 5vw 0 0 5vw;
+    pointer-events: none;
+    animation: backPackPrev 1s;
+}
+
+@keyframes backPackPrev {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 30vw;
+    }
+}
+
+.backPackMain {
+    position: absolute;
+    left: 5vw;
+    top: 3vw;
+    width: 20vw;
+    height: 25vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(255, 255, 255);
+}
+
+.backPackMain p {
+    display: block;
+    font-size: 1.2vw;
+    font-weight: 700;
+}
+
+.linkingBox {
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(127, 255, 212, 0.244);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .main {
+        width: calc(15vw * 1.5);
+        height: calc(28vw * 1.5);
+        left: 8%;
+        top: calc(11.2vw * 1.5);
+    }
+
+    .backPackPrev {
+        left: 31vw;
+        top: 17vw;
+        width: 55vw;
+        height: 55vw;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.832), rgba(55, 55, 55, 0.579));
+        border-radius: 0 5vw 5vw 0;
+        animation: backPackPrev 1s;
+    }
+    @keyframes backPackPrev {
+        0% {
+            width: 0%;
+        }
+    
+        100% {
+            width: 55vw;
+        }
+    }
+
+    .backPackMain {
+        top: 14vw;
+        left: 2vw;
+        width: 50vw;
+        z-index: 2;
+    }
+
+    .backPackMain p {
+        font-size: 2.5vw;
+    }
+}

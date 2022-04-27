@@ -1,0 +1,158 @@
+.mainHome{
+    position: relative;
+}
+.equipment{
+    position: relative;
+    background-color: blueviolet;
+    width: 30%;
+    height: 30vw;
+    filter: grayscale(100%);
+}
+.equipment:hover{
+    animation: equip 2s;
+    filter: grayscale(0%);
+}
+@keyframes equip{
+    0%{filter: grayscale(100%);}
+    100%{filter: grayscale(0%);}
+}
+.bunker{
+    position: relative;
+    background-color: rgb(102, 40, 160);
+    width: 30%;
+    height: 30vw;
+    filter: grayscale(100%);
+}
+.bunker:hover{
+    animation: bunker 2s;
+    filter: grayscale(0%);
+}
+@keyframes bunker{
+    0%{filter: grayscale(100%);}
+    100%{filter: grayscale(0%);}
+}
+.weapon{
+    position: relative;
+    background-color: rgb(92, 34, 146);
+    width: 30%;
+    height: 30vw;
+    filter: grayscale(100%);
+}
+.weapon:hover{
+    animation: weapon 2s;
+    filter: grayscale(0%);
+}
+@keyframes weapon{
+    0%{filter: grayscale(100%);}
+    100%{filter: grayscale(0%);}
+}
+.blocks{
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.homeMain{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0%;
+}
+
+.homeMain a{
+    display: block;
+    text-decoration: none;
+    color: aliceblue;
+}
+.homeMain a:hover{
+    color: aqua;
+}
+.backToMain{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 25vw;
+    left: -10vw;
+    width: 15vw;
+    height: 5vw;
+    background-color: rgb(95, 97, 97);
+    font-weight: 600;
+    border-radius: 0 5vw 5vw 0;
+    z-index: 1;
+    cursor: pointer;
+}
+.backToMain a{
+    background: none !important;
+    font-size: 2vw;
+    color: aliceblue;
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin-top: 2vw;
+    margin-left: 4vw;
+}
+.backToMain:hover{
+    left: 0vw;
+    animation: some 2s forwards;
+}
+.backToMain:active{
+    background-color: rgb(135, 129, 141);
+}
+@keyframes some{
+    0%{
+        left: -10vw;
+    }
+    50%{
+
+    }
+    100%{
+        left: 0vw;
+        background-color: rgba(137, 43, 226, 0.727);
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+
+    .homeMain{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .equipment{
+        width: 80vw;
+        height: 43vw;
+        margin: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .bunker{
+        width: 80vw;
+        height: 43vw;
+        margin: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .weapon{
+        width: 80vw;
+        height: 43vw;
+        margin: 2vw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .backToMain{
+        left: -15vw;
+        height: 15.5vw;
+        width: 24vw;
+    }
+    .backToMain a{
+        display: block;
+        margin-top: 10vw;
+        font-size: 3.5vw !important;
+    }
+}

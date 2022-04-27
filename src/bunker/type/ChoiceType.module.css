@@ -1,0 +1,16 @@
+.main{
+    width: 80vw;
+    position: relative;
+    left: 10vw;
+    font-size: 2.5vw;
+    margin: 0;
+    padding: 0;
+}
+.header{
+    background-color: tomato;
+    padding-left: 5vw;
+}
+
+.styleType a{
+    background-color: aqua !important;
+}

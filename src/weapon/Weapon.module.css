@@ -1,0 +1,15 @@
+.weaponMain{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.weaponMain h1{
+    font-size: 3vw;
+}
+.weaponMain a{
+    text-decoration: none;
+    font-size: 2vw;
+}
+.weaponMain a:hover{
+    background-color: aqua;
+}

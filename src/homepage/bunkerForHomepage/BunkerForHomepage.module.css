@@ -1,0 +1,54 @@
+.blocks{
+    width: 30vw;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../../media/bunker/bunkerForMain.png);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    cursor: pointer;
+}
+.blocks h1{
+    font-size: 3vw;
+}
+.armour{
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    width: 30%;
+    height: 40%;
+    background-image: url(../../media/bunker/bunkerPrev.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    display: none;
+    animation-name: bounce;
+    animation-duration: 1s;
+    pointer-events: none;
+}
+@keyframes bounce {
+    0%{
+        top:25%;
+        opacity: 0;
+    }
+    50%{
+
+    }
+    100%{
+        top: 65%;
+        opacity: 1;
+    }
+  }
+.blocks:active{
+    width: 70vw;
+    height: 40vw;
+    background: #ffe9e9;
+}
+@media screen and (max-width: 600px) {
+    .blocks{
+        width: 70vw;
+        height: 50vw;
+    }
+}

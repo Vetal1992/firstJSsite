@@ -1,0 +1,57 @@
+.exit{
+    position: absolute;
+    left: 74.4vw;
+    top: 28.7vw;
+    width: 11vw;
+    height: 22.6vw;
+    background-image: url(../../../media/bunker/bunkerPage/exit.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: .8;
+}
+.exit:hover{
+    border: 2px solid white;
+}
+.description{
+    position: absolute;
+    top: 28.7vw;
+    left: 44.3vw;
+    width: 30%;
+    height: auto;
+    padding: 1vw;
+    background-color: rgb(125, 129, 118);
+    display: none;
+    animation-name: bounce;
+    animation-duration: 1s;
+    pointer-events: none;
+    z-index: 2;
+}
+@keyframes bounce {
+    0%{
+        left: 79.4vw;
+        opacity: 0;
+    }
+    50%{
+
+    }
+    100%{
+        left: 44.3vw;
+        opacity: 1;
+    }
+  }
+  @media screen and (max-width: 600px) {
+    .exit{
+        position: absolute;
+        width: 18vw;
+        height: 22vw;
+        left: 84vw;
+        top: 44vw;
+    }
+    .enterText p{
+        font-size: 2.5vw;
+    }
+    .enterText h1{
+        font-size: 3.5vw;
+    }
+}

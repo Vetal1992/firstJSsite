@@ -1,0 +1,64 @@
+.toilet{
+    position: absolute;
+    left: 46.0vw;
+    top: 35.4vw;
+    width: 9.5vw;
+    height: 12.6vw;
+    background-image: url(../../../media/bunker/bunkerPage/toilet.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: .8;
+}
+.toilet:hover{
+    border: 2px solid white;
+}
+.description{
+    position: absolute;
+    top: 35.4vw;
+    left: 57.3vw;
+    width: 30%;
+    height: auto;
+    padding: 1vw;
+    background-color: rgb(125, 129, 118);
+    display: none;
+    animation-name: bounce;
+    animation-duration: 1s;
+    pointer-events: none;
+    z-index: 2;
+}
+@keyframes bounce {
+    0%{
+        left: 46.3vw;
+        opacity: 0;
+    }
+    50%{
+
+    }
+    100%{
+        left: 57.3vw;
+        opacity: 1;
+    }
+  }
+.linkingBlock{
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(127, 255, 212, 0.342);
+    cursor: pointer;
+  }
+  @media screen and (max-width: 600px) {
+    .toilet{
+        position: absolute;
+        width: 12vw;
+        height: 16vw;
+        left: 51vw;
+        top: 49vw;
+    }
+    .enterText p{
+        font-size: 2.5vw;
+    }
+    .enterText h1{
+        font-size: 3.5vw;
+    }
+}

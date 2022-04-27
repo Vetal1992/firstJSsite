@@ -1,0 +1,37 @@
+.mainContainer{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.main{
+    background-image: url(../media/mainPageEquipment.png);
+    width: 80vw;
+    height: 80vw;
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.equipmentMain{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+.equipmentMain h1{
+    font-size: 3vw;
+}
+.equipmentMain a{
+    text-decoration: none;
+    font-size: 2vw;
+}
+.equipmentMain a:hover{
+    background: linear-gradient(to right, rgb(107, 107, 107), rgb(107, 107, 107), rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+    border-radius: 1vw 0 0 1vw ;
+    z-index: 1;
+}
+@media screen and (max-width: 600px) {
+    .main{
+        height: calc(80vw * 1.5);
+        width: calc(80vw * 1.5);
+    }
+}

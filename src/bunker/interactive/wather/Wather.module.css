@@ -1,0 +1,65 @@
+.wather{
+    position: absolute;
+    left: 7.9vw;
+    top: 23.2vw;
+    width: 9.7vw;
+    height: 15.6vw;
+    background-image: url(../../../media/bunker/bunkerPage/wather.jpg);
+    background-repeat:no-repeat;
+    background-position: center;
+    background-size: contain;
+    opacity: 1;
+}
+.wather:hover{
+    border: 2px solid white;
+}
+.description{
+    position: absolute;
+    top: 22.6vw;
+    left: 18.9vw;
+    width: 30%;
+    height: auto;
+    padding: 1vw;
+    background-color: rgb(125, 129, 118);
+    display: none;
+    animation-name: bounce;
+    animation-duration: 1s;
+    pointer-events: none;
+    z-index: 2;
+}
+@keyframes bounce {
+    0%{
+        left: 10.3vw;
+        opacity: 0;
+    }
+    50%{
+
+    }
+    100%{
+        left: 18.9vw;
+        opacity: 1;
+    }
+  }
+  .linking{
+      display: none;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(127, 255, 212, 0.342);
+      cursor: pointer;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .wather{
+        position: absolute;
+        top: 35.8vw;
+        left: 3.8vw;
+        width: 12.7vw;
+        height: 16vw;
+    }
+    .enterText p {
+        font-size: 2.5vw;
+    }
+    .enterText h1{
+        font-size: 3.5vw;
+    }
+}

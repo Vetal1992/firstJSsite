@@ -1,0 +1,11 @@
+.mainBlock{
+    margin-left: 10vw;
+    width: 80vw;
+}
+.simpleWent{
+    display: block;
+    font-size: x-large;
+    font-weight: 900;
+    background-color: rgba(88, 39, 30, 0.5);
+    padding-left: 3vw;
+}

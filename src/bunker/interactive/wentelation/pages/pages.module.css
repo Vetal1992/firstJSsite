@@ -1,0 +1,30 @@
+.mainBlock{
+    margin-left: 10vw;
+    width: 80vw;
+    font-size: 2.5vw;
+}
+.image1{
+    width:20vw;
+    height: 15vw;
+    float: right;
+}
+.image2{
+    width:30vw;
+    height: 15vw;
+    float: right;
+}
+.bottleImg{
+    float: right;
+    height: 10vw;
+    width: 40vw;
+}
+
+.imageToilet{
+    height: 21vw;
+    float: right;
+}
+
+.imageCanalization{
+    height: 15vw;
+    float: right;
+}
